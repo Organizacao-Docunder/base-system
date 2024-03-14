@@ -17,8 +17,8 @@ services:
                   networks:
                     - "app-network"
                   environment:
-                    POSTGRES_PASSWORD:
-                    POSTGRES_USER:
+                    POSTGRES_PASSWORD: 
+                    POSTGRES_USER: 
                   ports:
                     - "8080:8080"
                     
@@ -32,8 +32,8 @@ services:
                     - "app-network"
                   ports:
                     - "3000:3000"
-                  dependes_on:
-                    - usersdb
+                  depends_on:
+                    - "usersdb"
                   
                     
 
